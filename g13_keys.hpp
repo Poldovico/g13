@@ -78,7 +78,7 @@ static const char*  G13_SYMBOLS[] = {
  */
 
 // clang-format off
-static const char* G13_BTN_SEQ[] = { "LEFT", "RIGHT", "MIDDLE", "SIDE", "EXTRA" };
+// static const char* G13_BTN_SEQ[] = { "LEFT", "RIGHT", "MIDDLE", "SIDE", "EXTRA" };
 // clang-format on
 
 typedef int G13_KEY_INDEX;

@@ -76,7 +76,7 @@ void G13_Manager::InitKeynames() {
       G13_OUT("mapping " << symbol << " " << keyname << "=" << code);
     }
   }
-
+  /*
   // setup maps to let us convert between strings and linux button names
   for (auto &symbol : G13::G13_BTN_SEQ) {
     auto name = std::string("M" + std::string(symbol));
@@ -90,6 +90,7 @@ void G13_Manager::InitKeynames() {
       G13_OUT("mapping " << name << " " << keyname << "=" << code);
     }
   }
+  */
 }
 
 void G13_Manager::SignalHandler(int signal) {

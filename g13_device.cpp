@@ -104,11 +104,14 @@ int G13CreateUinput(G13_Device *g13) {
     ioctl(ufile, UI_SET_KEYBIT, i);
   }
 
+/*
+  Not setting these bits should prevent the G13 from being treated as a mouse by X11
   // Mouse buttons
   for (int i = 0x110; i < 0x118; i++) {
     ioctl(ufile, UI_SET_KEYBIT, i);
   }
   ioctl(ufile, UI_SET_KEYBIT, BTN_THUMB);
+*/
 
   int retcode = write(ufile, &uinp, sizeof(uinp));
   if (retcode < 0) {
