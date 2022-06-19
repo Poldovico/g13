@@ -1,11 +1,13 @@
 # Userspace driver for the G13
 
+This repo includes [tmackay's stickzone efficiency PR](https://github.com/khampf/g13/pull/22) and removes support for binding mouse buttons to the G13, which was causing the mouse pointer to move with the analog stick when using absolute mode.
+
 ## This is a 100% boost free version
 You no longer need to rebuild this every other week when boost updates. It started out as a quick rewrite but has turned out to be a refactoring job gone wild. It is not completely refactored but I have so far:
 
 * Removed all dependencies on boost libraries
 * Fixed a couple of bugs (and probably introduced some others)
-* Merged some work on adding support for additional keys and mouse clicks
+* Merged some work on adding support for additional keys ~~and mouse clicks~~(not in this fork)
 * Added support for USB hotplugging
 * Moved from regular Makefile to CMake
 * Refactored by splitting up huge source files into smaller parts
